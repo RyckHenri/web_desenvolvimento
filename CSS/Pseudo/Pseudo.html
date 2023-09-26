@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        * {margin: 5px auto; padding: 0; border: 1px solid;}
+        li:first-child {background-color: pink; font-style: italic;}
+        li:last-child {background-color: greenyellow; font-weight: bold;}
+        li:nth-child(2) {background-color: blue;}
+        li:nth-child(3) {background-color: yellow;}
+        li:nth-child(4) {background-color: red;}
+        div:first-of-type {background-color: violet; height: 50px;}
+        p:first-of-type {background-color: black; color: white;height: 50px;}
+        p:last-of-type {background-color: cyan; height: 50px;}
+    </style>
+</head>
+<body>
+    <p>Primeiro filho de Body</p>
+
+    <section class="content">
+        <ul>
+            <li>Primeiro Filho</li>
+            <li>Segundo Filho</li>
+            <li>Terceiro Filho</li>
+            <li>Quarto Filho</li>
+            <li>Quinto Filho</li>
+        </ul>
+    </section>
+
+    <div>Primeira Div</div>
+    <div>Segunda Div</div>
+
+    <nav>
+        <a href="#">Primeiro</a>
+        <a href="#">Segundo</a>
+    </nav>
+
+    <p>
+        <ul>
+            <li>Primeiro li do &lt;p&gt;</li>
+            <li>Segundo li do &lt;p&gt;</li>
+        </ul>
+    </p>
+</body>
+</html>

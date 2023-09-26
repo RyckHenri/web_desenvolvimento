@@ -1,0 +1,84 @@
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #fafafa;
+    color: #555;
+    line-height: 1.6em;
+}
+
+section.container {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+/* 
+ Quando ultilizo o * junto a outro seletor
+ ele indica que devemos aplicar a mudança 
+ a todos os filhos do seletor. 
+ */
+
+.box * {
+    padding-bottom: .5rem;
+}
+
+.box p span{ 
+    padding-left: 8px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: rgb(3, 3, 80,0.595);
+}
+
+.categorias {
+    margin-top: 20px;
+    border: 1px gray solid;
+    border-radius: 15px;
+    padding: 10px ;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.categorias li {
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #333;
+}
+
+.categorias li a {
+    text-decoration: none;
+    color: #333;
+}
+/*Pseudoselementos*/
+
+p::first-letter {
+    font-size: 200%;
+    font-family: serif;
+    color: #abcdef;
+}
+
+.categorias h2::after {
+    content:'😊';
+}
+
+.categorias li a::before {
+    content: '➤';
+}
